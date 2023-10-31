@@ -1,0 +1,16 @@
+ALGORITHM sort_insertion
+VAR
+    arr : ARRAY_OF INTEGER[length];  // Déclaration d'un tableau d'entiers
+    i, j, clef, n: INTEGER;  // Déclaration de variables entières
+BEGIN
+    n := arr.length;  // Obtenir la longueur du tableau
+    FOR i FROM 1 TO n - 1 DO  // Boucle externe, itérant à travers les éléments du tableau
+        clef := arr[i];  // Stocker la valeur actuelle dans la variable clef
+        j := i - 1;  // Initialiser j pour parcourir les éléments précédents
+        WHILE (j >= 0 AND arr[j] > clef) DO  // Boucle interne, déplace les éléments plus grands
+            arr[j + 1] := arr[j];  // Déplace l'élément précédent vers la droite
+            j := j - 1;  // Décrémente j pour comparer avec les éléments précédents
+        END_WHILE
+        arr[j + 1] := clef;  // Place la clef à la position correcte
+    END_FOR  // Fin de la boucle externe
+END  // Fin de l'algorithme
