@@ -10,7 +10,8 @@ GoMyCode Checkpoint : Sorting and searching algorithms
 
 - Il initialise une variable "j" à "i - 1" pour parcourir les éléments précédents à partir de la position "i".
 
-- L'algorithme entre dans une boucle while, tant que "j" est supérieur ou égal à 0 et que l'élément précédent à la position "j" est plus grand que la "clef". Cette boucle permet de déplacer les éléments plus grands vers la droite pour faire de la place pour la "clef".
+- L'algorithme entre dans une boucle while, tant que "j" est supérieur ou égal à 0 et que l'élément précédent à la position "j" est 
+plus grand que la "clef". Cette boucle permet de déplacer les éléments plus grands vers la droite pour faire de la place pour la "clef".
 
 - Dans la boucle while , l'algorithme déplace l'élément à la position "j" vers la droite (à la position "j + 1") pour libérer de l'espace pour la "clef". Ensuite, il décrémente "j" pour passer à l'élément précédent et continue la comparaison.
 

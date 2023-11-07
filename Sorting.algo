@@ -1,6 +1,6 @@
 ALGORITHM sort_insertion
 VAR
-    arr : ARRAY_OF INTEGER[length];  // Déclaration d'un tableau d'entiers
+    arr : ARRAY_OF FLOAT[length];  // Déclaration d'un tableau d'entiers
     i, j, clef, n: INTEGER;  // Déclaration de variables entières
 BEGIN
     n := arr.length;  // Obtenir la longueur du tableau
